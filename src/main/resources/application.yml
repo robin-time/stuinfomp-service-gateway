@@ -30,7 +30,7 @@ spring:
         - id: STUINFOMP-SERVICE-REG
           uri: lb://stuinfomp-service-reg
           predicates:
-            - Path=/api/reg/**
+            - Path=/api/user/**
           filters:
             - StripPrefix=1
         - id: STUINFOMP-SERVICE-COREINFO
